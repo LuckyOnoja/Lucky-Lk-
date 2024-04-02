@@ -91,7 +91,7 @@ body {
 .subjects .imagesDiv figure img {
   float: left;
   width: 20%;
-  object-fit: cover;
+  object-fit: contain;
   height: 60vh;
 }
 
@@ -250,7 +250,6 @@ body {
   }
   .subjects .imagesDiv figure img {
     height: fit-content;
-    object-fit: contain;
   }
 }
 
