@@ -14,8 +14,8 @@ class CVDownload extends React.Component {
   render() {
     return (
       <div className="cv-download-container">
-        <h1>Download My CV</h1>
-        <p>Click the button below to download my CV.</p>
+        <h1> My CV</h1>
+        <p>Click the button below to Checkout my CV.</p>
         <button onClick={this.handleDownload}>Download CV</button>
       </div>
     );

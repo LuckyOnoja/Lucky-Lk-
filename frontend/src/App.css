@@ -248,6 +248,10 @@ body {
   .skills .skillDiv span {
     margin: 0% 20px;
   }
+  .subjects .imagesDiv figure img {
+    height: fit-content;
+    object-fit: contain;
+  }
 }
 
 /* styles for footer.js */
@@ -429,6 +433,7 @@ body {
     width: 80%;
   }
   .messageContainer .messageInput button {
+    color: white;
     width: 20%;
   }
 }
