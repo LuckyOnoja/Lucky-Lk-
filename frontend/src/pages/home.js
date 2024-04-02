@@ -6,8 +6,9 @@ import Footer from "../components/footer";
 import Signup from "../components/Signup";
 import Login from "../components/login";
 import Message from "./message";
+import CVDownload from "../components/cvdownloader";
 
-export default function Home({adminAuthFromHome}) {
+export default function Home({ adminAuthFromHome }) {
   const [signupValue, setSignupValue] = useState(() => {
     const storedValue = localStorage.getItem("signupValue");
     return storedValue === "true";
@@ -53,7 +54,7 @@ export default function Home({adminAuthFromHome}) {
   const handleAdminAuth = (adminAuth) => {
     // This function receives data from the child component and updates the state in the parent.
     setAdminAuth(adminAuth);
-    adminAuthFromHome(adminAuth)
+    adminAuthFromHome(adminAuth);
   };
 
   const handleLoginvalue = (loginValue) => {
@@ -74,22 +75,28 @@ export default function Home({adminAuthFromHome}) {
           <img src="../Assets/bg1.jpg" />
         </div>
         <h1>
-          I am Lucky LK Onoja a very insightful , creative and experienced full
-          stack website developer . I've been on this journey for about 2 years
-          now and alot of values like : Commitment , Consistency , Coordination
-          , Discipline ... and many more became art of me along the line .
-          <br />
-          Through those Years I have worked on various projects on different
-          contexts such as a movie Web app , a music player website , a Donation
-          website , different websites for individuals and more to come .
+          I am Lucky LK Onoja a Motivated professional I offer expertise in
+          HTML5, CSS3, JavaScript, and Query. Adept at troubleshooting and
+          resolving complex technical issues, while consistently meeting
+          deadlines and client expectations. Proven ability to quickly learn and
+          apply new technologies and techniques to enhance user experience and
+          enable website optimization Hardworking, highly motivated professional
+          eager to lend combined knowledge and skills to enhance business
+          performance. Operates well in both individual and team capacities,
+          leveraging seasoned work ethic to quickly adapt to different processes
+          and drive company objectives. Resourceful and results-driven with a
+          passion for growth and efficiency to meet company needs and increase
+          service value
         </h1>
+
         <div className="imagesDiv">
+          <h2 style={{ color: "white", textAlign: "center" }}>My Projects</h2>
           <figure>
-            <img src="../Assets/img1.jpg " />
-            <img src="../Assets/Lucky LK logo.png" />
-            <img src="../Assets/img5.jpg " />
-            <img src="../Assets/img3.jpg " />
-            <img src="../Assets/img1.jpg " />
+            <img src="https://i.imgur.com/u6yYp5G.jpeg " />
+            <img src="https://i.imgur.com/kdKg3II.jpeg" />
+            <img src="https://i.imgur.com/DDmiG3k.jpeg " />
+            <img src="https://i.imgur.com/QZzex5G.jpeg " />
+            <img src="https://i.imgur.com/u6yYp5G.jpeg " />
           </figure>
         </div>
       </div>
@@ -143,6 +150,7 @@ export default function Home({adminAuthFromHome}) {
           the Loctech Institute, Nigeria.
         </h3>
       </div>
+      <CVDownload/>
       <div className="websiteLinks">
         <h1>Links</h1>
         <a href="jbbwbdiwdb.com">Gmail link</a>

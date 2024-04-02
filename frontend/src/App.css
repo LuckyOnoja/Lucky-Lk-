@@ -432,3 +432,33 @@ body {
     width: 20%;
   }
 }
+
+/* styles for cv download */
+.cv-download-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cv-download-container h1 {
+  color: #ffffff;
+}
+
+.cv-download-container p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cv-download-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cv-download-container button:hover {
+  background-color: #0056b3;
+}
